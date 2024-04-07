@@ -9,9 +9,7 @@ export default function App() {
     <Router
       root={(props) => (
         <MetaProvider>
-          <Title>SolidStart - Basic</Title>
-          <a href="/">Index</a>
-          <a href="/about">About</a>
+          <Title>Twitch Chat TUI</Title>
           <Suspense>{props.children}</Suspense>
         </MetaProvider>
       )}
