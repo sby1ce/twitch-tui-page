@@ -16,6 +16,7 @@ const CT_HTML: &[u8] = b"text/html";
 const CT_CSS: &[u8] = b"text/css";
 const CT_JS: &[u8] = b"text/javascript";
 const CT_ICO: &[u8] = b"image/vnd.microsoft.icon";
+const CT_WASM: &[u8] = b"application/wasm";
 const CRLF: &[u8] = b"\r\n";
 
 pub struct HttpResponse {
@@ -56,12 +57,20 @@ impl HttpResponse {
     }
 }
 
+fn strip_filename(filename: &str) -> &str {
+    filename
+        .get(1..(filename.rfind('?').unwrap_or(filename.len())))
+        .unwrap_or_default()
+}
+
 pub fn find_file(request: &str) -> eyre::Result<HttpResponse> {
     if !request.starts_with("GET /") || !request.ends_with(" HTTP/1.1") {
         return Ok(HttpResponse::new_not_found());
     }
 
-    let filename: &str = request.get(5..(request.len() - 9)).unwrap_or_default();
+    let Some(filename) = request.split(' ').nth(1).map(strip_filename) else {
+        return Ok(HttpResponse::new_not_found());
+    };
 
     let path: PathBuf = Path::new(PUBLIC_DIR).join(filename);
 
@@ -80,6 +89,7 @@ pub fn find_file(request: &str) -> eyre::Result<HttpResponse> {
         Some("css") => CT_CSS,
         Some("js") => CT_JS,
         Some("ico") => CT_ICO,
+        Some("wasm") => CT_WASM,
         _ => b"",
     };
 

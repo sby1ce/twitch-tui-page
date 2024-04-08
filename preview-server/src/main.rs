@@ -24,6 +24,7 @@ fn handle_connection(mut stream: TcpStream) -> eyre::Result<()> {
 
 fn main() -> eyre::Result<()> {
     let listener = TcpListener::bind("127.0.0.1:7878")?;
+    println!("http://localhost:7878/");
 
     for stream in listener.incoming() {
         handle_connection(stream?)?;
