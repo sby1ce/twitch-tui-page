@@ -1,24 +1,17 @@
-import { Title } from "@solidjs/meta";
-import Header from "~/components/Header.tsx";
-import Navbar from "~/components/Navbar";
+import Base from "~/components/Base";
 
 export default function Home() {
   return (
-    <>
-      <Title>Twitch Chat TUI</Title>
-      <Header />
-      <div class="wrapper">
-        <Navbar current="Home" />
-        <main>
-          <h1>Twitch Chat TUI</h1>
-          <p>
-            A chat text-based user interface is a chat client for&nbsp;
-            <a href="https://www.twitch.tv/" target="_blank">
-              Twitch
-            </a>
-          </p>
-        </main>
-      </div>
-    </>
+    <Base current="Home" title="">
+      <main>
+        <h1>Twitch Chat TUI</h1>
+        <p>
+          A chat text-based user interface is a chat client for&nbsp;
+          <a href="https://www.twitch.tv/" target="_blank">
+            Twitch
+          </a>
+        </p>
+      </main>
+    </Base>
   );
 }

@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "preview": "cd preview-server; cargo run --release",
+    "preview": "cd preview-server && cargo run --release",
     "format": "prettier -w . --plugin=eslint-plugin-solid"
   },
   "engines": {
