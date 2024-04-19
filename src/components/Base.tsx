@@ -1,7 +1,7 @@
 import type { JSXElement } from "solid-js";
-import Header from "./Header";
+import Header from "./Header.tsx";
 import { Title } from "@solidjs/meta";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar.tsx";
 
 export interface BaseProps {
   children: JSXElement;

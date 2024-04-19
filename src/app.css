@@ -1,3 +1,9 @@
+html,
+button,
+select {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 #app {
   display: flex;
   flex-direction: column;

@@ -1,4 +1,4 @@
-import Base from "~/components/Base";
+import Base from "~/components/Base.tsx";
 
 export default function Home() {
   return (
