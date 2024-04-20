@@ -1,5 +1,6 @@
 import type { JSXElement } from "solid-js";
 import Header from "./Header.tsx";
+import Footer from "./Footer.tsx";
 import { Title } from "@solidjs/meta";
 import Navbar from "./Navbar.tsx";
 
@@ -21,6 +22,7 @@ export default function Base(props: BaseProps): JSXElement {
         <Navbar current={props.current} />
         {props.children}
       </div>
+      <Footer />
     </>
   );
 }

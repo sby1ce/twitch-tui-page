@@ -1,0 +1,7 @@
+.footer {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1em;
+  font-size: 0.8em;
+}
