@@ -18,10 +18,12 @@ export default function Base(props: BaseProps): JSXElement {
     <>
       <Title>{title}</Title>
       <Header />
+      <hr />
       <div class="wrapper">
         <Navbar current={props.current} />
         {props.children}
       </div>
+      <hr />
       <Footer />
     </>
   );

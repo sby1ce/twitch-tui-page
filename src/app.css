@@ -1,12 +1,18 @@
 html,
 button,
 select {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0.5em;
+  box-sizing: border-box;
 }
 
 #app {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  min-block-size: calc(100vh - 1em);
 }
 
 .wrapper {
@@ -22,4 +28,10 @@ select {
   .wrapper {
     grid-template-columns: 1fr;
   }
+}
+
+hr {
+  border-top: 1px solid gray;
+  margin: 1em;
+  padding: 0;
 }
