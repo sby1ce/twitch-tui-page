@@ -5,7 +5,8 @@
     "dev": "vinxi dev",
     "build": "vinxi build",
     "preview": "cd preview-server && cargo run --release",
-    "format": "prettier -w . --plugin=eslint-plugin-solid"
+    "format": "prettier -w . --plugin=eslint-plugin-solid",
+    "licences": "bun licence_macro.ts && bun run format"
   },
   "engines": {
     "node": ">=20"
@@ -14,6 +15,7 @@
     "@solidjs/meta": "^0.29.3",
     "@solidjs/router": "^0.13.1",
     "@solidjs/start": "^1.0.0-rc.0",
+    "@types/bun": "^1.1.0",
     "eslint-plugin-solid": "^0.13.2",
     "prettier": "^3.2.5",
     "solid-js": "^1.8.16",

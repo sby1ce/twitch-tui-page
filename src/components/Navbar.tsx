@@ -1,3 +1,4 @@
+import { A } from "@solidjs/router";
 import { For, type JSX } from "solid-js";
 
 export interface NavbarProps {
@@ -11,8 +12,7 @@ interface Route {
 
 const routes: Route[] = [
   { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  // { name: "Licences", path: "/licences" },
+  { name: "Licences", path: "/licences" },
 ];
 
 function renderRoute(current: string, item: Route): JSX.Element {
@@ -25,7 +25,7 @@ function renderRoute(current: string, item: Route): JSX.Element {
   }
   return (
     <li>
-      <a href={item.path}>{item.name}</a>
+      <A href={item.path}>{item.name}</A>
     </li>
   );
 }
