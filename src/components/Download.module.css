@@ -16,6 +16,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 .buttons {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
