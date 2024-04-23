@@ -9,91 +9,91 @@ import Base from "~/components/Base.tsx";
 // This is ugly but it's the best option there is
 // Wrote a macro to fill these automatically
 // macro start
-import qfds from "~/../static/LICENCES/tui/chrono/LICENSE.txt?raw";
-import yhcw from "~/../static/LICENCES/tui/color-eyre/LICENSE-APACHE.txt?raw";
-import xdog from "~/../static/LICENCES/tui/color-eyre/LICENSE-MIT.txt?raw";
-import oszq from "~/../static/LICENCES/tui/criterion/LICENSE-APACHE.txt?raw";
-import aamo from "~/../static/LICENCES/tui/criterion/LICENSE-MIT.txt?raw";
-import mbwt from "~/../static/LICENCES/tui/crossterm/LICENSE.txt?raw";
-import yqcy from "~/../static/LICENCES/tui/futures/LICENSE-APACHE.txt?raw";
-import bapv from "~/../static/LICENCES/tui/futures/LICENSE-MIT.txt?raw";
-import mkxk from "~/../static/LICENCES/tui/indexmap/LICENSE-APACHE.txt?raw";
-import doeh from "~/../static/LICENCES/tui/indexmap/LICENSE-MIT.txt?raw";
-import sawq from "~/../static/LICENCES/tui/lazy-regex/LICENSE.txt?raw";
-import twtm from "~/../static/LICENCES/tui/mimalloc/LICENSE.txt?raw";
-import lfim from "~/../static/LICENCES/tui/ratatui/LICENSE.txt?raw";
-import llyb from "~/../static/LICENCES/tui/tokio/LICENSE.txt?raw";
-import wwrm from "~/../static/LICENCES/tui/twitch-chat-tui/CC0-1.0.txt?raw";
-import denx from "~/../static/LICENCES/tui/twitch-chat-tui/LICENCE.txt?raw";
-import ekjl from "~/../static/LICENCES/tui/twitch-irc/LICENSE.txt?raw";
-import dgqf from "~/../static/LICENCES/web/eslint-plugin-solid/LICENSE.txt?raw";
-import gbjt from "~/../static/LICENCES/web/prettier/LICENSE.txt?raw";
-import iphl from "~/../static/LICENCES/web/solid-js/LICENSE.txt?raw";
-import rigs from "~/../static/LICENCES/web/twitch-tui-page/CC-BY-4.0.txt?raw";
-import xddh from "~/../static/LICENCES/web/twitch-tui-page/CC0-1.0.txt?raw";
-import igzp from "~/../static/LICENCES/web/twitch-tui-page/LICENCE.txt?raw";
-import vxsw from "~/../static/LICENCES/web/vinxi/LICENSE.txt?raw";
+import hwkg from "~/../static/LICENCES/tui/chrono/LICENSE.txt?raw";
+import eiby from "~/../static/LICENCES/tui/color-eyre/LICENSE-APACHE.txt?raw";
+import wgui from "~/../static/LICENCES/tui/color-eyre/LICENSE-MIT.txt?raw";
+import drei from "~/../static/LICENCES/tui/criterion/LICENSE-APACHE.txt?raw";
+import zpiy from "~/../static/LICENCES/tui/criterion/LICENSE-MIT.txt?raw";
+import ogtu from "~/../static/LICENCES/tui/crossterm/LICENSE.txt?raw";
+import trsd from "~/../static/LICENCES/tui/futures/LICENSE-APACHE.txt?raw";
+import ihtp from "~/../static/LICENCES/tui/futures/LICENSE-MIT.txt?raw";
+import fsic from "~/../static/LICENCES/tui/indexmap/LICENSE-APACHE.txt?raw";
+import vqol from "~/../static/LICENCES/tui/indexmap/LICENSE-MIT.txt?raw";
+import lage from "~/../static/LICENCES/tui/lazy-regex/LICENSE.txt?raw";
+import emus from "~/../static/LICENCES/tui/mimalloc/LICENSE.txt?raw";
+import glxi from "~/../static/LICENCES/tui/ratatui/LICENSE.txt?raw";
+import eisj from "~/../static/LICENCES/tui/tokio/LICENSE.txt?raw";
+import pfno from "~/../static/LICENCES/tui/twitch-chat-tui/CC0-1.0.txt?raw";
+import qeez from "~/../static/LICENCES/tui/twitch-chat-tui/LICENCE.txt?raw";
+import vfba from "~/../static/LICENCES/tui/twitch-irc/LICENSE.txt?raw";
+import ubum from "~/../static/LICENCES/web/eslint-plugin-solid/LICENSE.txt?raw";
+import iyal from "~/../static/LICENCES/web/prettier/LICENSE.txt?raw";
+import wpqc from "~/../static/LICENCES/web/solid-js/LICENSE.txt?raw";
+import qieb from "~/../static/LICENCES/web/twitch-tui-page/CC-BY-4.0.txt?raw";
+import yaty from "~/../static/LICENCES/web/twitch-tui-page/CC0-1.0.txt?raw";
+import hpvg from "~/../static/LICENCES/web/twitch-tui-page/LICENCE.txt?raw";
+import vdcj from "~/../static/LICENCES/web/vinxi/LICENSE.txt?raw";
 
 const TUI_LICENCES: LicenceProps[] = [
-  { title: "chrono", contents: [{ name: "LICENSE.txt", content: qfds }] },
+  { title: "chrono", contents: [{ name: "LICENSE.txt", content: hwkg }] },
   {
     title: "color-eyre",
     contents: [
-      { name: "LICENSE-APACHE.txt", content: yhcw },
-      { name: "LICENSE-MIT.txt", content: xdog },
+      { name: "LICENSE-APACHE.txt", content: eiby },
+      { name: "LICENSE-MIT.txt", content: wgui },
     ],
   },
   {
     title: "criterion",
     contents: [
-      { name: "LICENSE-APACHE.txt", content: oszq },
-      { name: "LICENSE-MIT.txt", content: aamo },
+      { name: "LICENSE-APACHE.txt", content: drei },
+      { name: "LICENSE-MIT.txt", content: zpiy },
     ],
   },
-  { title: "crossterm", contents: [{ name: "LICENSE.txt", content: mbwt }] },
+  { title: "crossterm", contents: [{ name: "LICENSE.txt", content: ogtu }] },
   {
     title: "futures",
     contents: [
-      { name: "LICENSE-APACHE.txt", content: yqcy },
-      { name: "LICENSE-MIT.txt", content: bapv },
+      { name: "LICENSE-APACHE.txt", content: trsd },
+      { name: "LICENSE-MIT.txt", content: ihtp },
     ],
   },
   {
     title: "indexmap",
     contents: [
-      { name: "LICENSE-APACHE.txt", content: mkxk },
-      { name: "LICENSE-MIT.txt", content: doeh },
+      { name: "LICENSE-APACHE.txt", content: fsic },
+      { name: "LICENSE-MIT.txt", content: vqol },
     ],
   },
-  { title: "lazy-regex", contents: [{ name: "LICENSE.txt", content: sawq }] },
-  { title: "mimalloc", contents: [{ name: "LICENSE.txt", content: twtm }] },
-  { title: "ratatui", contents: [{ name: "LICENSE.txt", content: lfim }] },
-  { title: "tokio", contents: [{ name: "LICENSE.txt", content: llyb }] },
+  { title: "lazy-regex", contents: [{ name: "LICENSE.txt", content: lage }] },
+  { title: "mimalloc", contents: [{ name: "LICENSE.txt", content: emus }] },
+  { title: "ratatui", contents: [{ name: "LICENSE.txt", content: glxi }] },
+  { title: "tokio", contents: [{ name: "LICENSE.txt", content: eisj }] },
   {
     title: "twitch-chat-tui",
     contents: [
-      { name: "CC0-1.0.txt", content: wwrm },
-      { name: "LICENCE.txt", content: denx },
+      { name: "CC0-1.0.txt", content: pfno },
+      { name: "LICENCE.txt", content: qeez },
     ],
   },
-  { title: "twitch-irc", contents: [{ name: "LICENSE.txt", content: ekjl }] },
+  { title: "twitch-irc", contents: [{ name: "LICENSE.txt", content: vfba }] },
 ];
 const WEB_LICENCES: LicenceProps[] = [
   {
     title: "eslint-plugin-solid",
-    contents: [{ name: "LICENSE.txt", content: dgqf }],
+    contents: [{ name: "LICENSE.txt", content: ubum }],
   },
-  { title: "prettier", contents: [{ name: "LICENSE.txt", content: gbjt }] },
-  { title: "solid-js", contents: [{ name: "LICENSE.txt", content: iphl }] },
+  { title: "prettier", contents: [{ name: "LICENSE.txt", content: iyal }] },
+  { title: "solid-js", contents: [{ name: "LICENSE.txt", content: wpqc }] },
   {
     title: "twitch-tui-page",
     contents: [
-      { name: "CC-BY-4.0.txt", content: rigs },
-      { name: "CC0-1.0.txt", content: xddh },
-      { name: "LICENCE.txt", content: igzp },
+      { name: "CC-BY-4.0.txt", content: qieb },
+      { name: "CC0-1.0.txt", content: yaty },
+      { name: "LICENCE.txt", content: hpvg },
     ],
   },
-  { title: "vinxi", contents: [{ name: "LICENSE.txt", content: vxsw }] },
+  { title: "vinxi", contents: [{ name: "LICENSE.txt", content: vdcj }] },
 ];
 // macro end
 

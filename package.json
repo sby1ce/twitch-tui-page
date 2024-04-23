@@ -7,7 +7,7 @@
     "build": "vinxi build",
     "preview": "cd preview-server && cargo run --release",
     "format": "prettier -w . --plugin=eslint-plugin-solid",
-    "licences": "bun licence_macro.ts && bun run format"
+    "licences": "bun licence_macro.ts && prettier -w src/routes/licences.tsx"
   },
   "engines": {
     "node": ">=20"
