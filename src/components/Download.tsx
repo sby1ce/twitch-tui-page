@@ -57,11 +57,10 @@ export default function Download(): JSXElement {
         </button>
       </div>
 
-      <select
-        value={platform()}
-        onInput={(e) => setPlatform(e.currentTarget.value as Platform)}
-      >
-        <option value={Platform.Windows}>Windows</option>
+      <select onInput={(e) => setPlatform(e.currentTarget.value as Platform)}>
+        <option value={Platform.Windows} selected>
+          Windows
+        </option>
         <option value={Platform.Linux}>Linux</option>
       </select>
     </section>
