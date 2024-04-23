@@ -22,7 +22,7 @@ export default function Home() {
         </section>
         <Download />
         <section>
-          <h2>Controls</h2>
+          <h2 id="Navigation">Navigation</h2>
           <p>
             (Esq) to quit <br />
             (h) (or (Ctrl + h) in input mode) to toggle this popup <br />

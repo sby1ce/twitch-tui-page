@@ -18,7 +18,7 @@ export default function Footer(): JSX.Element {
           </a>
         </p>
         <p>
-          <a href="/licences">Licences</a>
+          <a href="/licences#TUI">Licences</a>
         </p>
       </div>
       <div>
@@ -29,7 +29,7 @@ export default function Footer(): JSX.Element {
           </a>
         </p>
         <p>
-          <a href="/licences#website">Licences</a>
+          <a href="/licences#Website">Licences</a>
         </p>
       </div>
       <div>

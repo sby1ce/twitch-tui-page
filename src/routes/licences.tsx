@@ -126,14 +126,14 @@ function Licence(props: LicenceProps): JSX.Element {
 export default function Licences(): JSX.Element {
   const tui = (
     <section>
-      <h2>TUI app</h2>
+      <h2 id="TUI">TUI app</h2>
       <For each={TUI_LICENCES}>{(item) => <Licence {...item} />}</For>
     </section>
   );
 
   const web = (
     <section>
-      <h2>Website</h2>
+      <h2 id="Website">Website</h2>
       <For each={WEB_LICENCES}>{(item) => <Licence {...item} />}</For>
     </section>
   );

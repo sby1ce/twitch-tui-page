@@ -8,5 +8,5 @@ import { type JSX } from "solid-js";
 import styles from "./Header.module.css";
 
 export default function Header(): JSX.Element {
-  return <header class={styles.header}>Twitch Chat TUI</header>;
+  return <header class={styles.header}><a href="/">Twitch Chat TUI</a></header>;
 }
