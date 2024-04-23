@@ -4,12 +4,12 @@ Copyright 2024 sby1ce
 SPDX-License-Identifier: AGPL-3.0-or-later
 */
 
-import Base from "~/components/Base.tsx";
+import Frame from "~/components/Frame.tsx";
 import Download from "~/components/Download.tsx";
 
 export default function Home() {
   return (
-    <Base current="Home" title="">
+    <Frame current="Home" title="">
       <main>
         <section>
           <h1>Twitch Chat TUI</h1>
@@ -33,6 +33,6 @@ export default function Home() {
           </p>
         </section>
       </main>
-    </Base>
+    </Frame>
   );
 }

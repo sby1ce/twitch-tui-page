@@ -10,13 +10,13 @@ import Footer from "./Footer.tsx";
 import { Title } from "@solidjs/meta";
 import Navbar from "./Navbar.tsx";
 
-export interface BaseProps {
+export interface FrameProps {
   children: JSXElement;
   title: string;
   current: string;
 }
 
-export default function Base(props: BaseProps): JSXElement {
+export default function Frame(props: FrameProps): JSXElement {
   const title: string = props.title
     ? `${props.title} | Twitch Chat TUI`
     : "Twitch Chat TUI";

@@ -5,7 +5,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 */
 
 import { For, type JSX } from "solid-js";
-import Base from "~/components/Base.tsx";
+import Frame from "~/components/Frame.tsx";
 // This is ugly but it's the best option there is
 // Wrote a macro to fill these automatically
 // macro start
@@ -139,12 +139,12 @@ export default function Licences(): JSX.Element {
   );
 
   return (
-    <Base current="Licences" title="Licences">
+    <Frame current="Licences" title="Licences">
       <main>
         <h1>Licences</h1>
         {tui}
         {web}
       </main>
-    </Base>
+    </Frame>
   );
 }
