@@ -1,3 +1,9 @@
+/*
+Copyright 2024 sby1ce
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+*/
+
 import { Match, Switch, createSignal, type JSXElement } from "solid-js";
 import style from "./Download.module.css";
 

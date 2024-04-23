@@ -1,3 +1,9 @@
+/*
+Copyright 2024 sby1ce
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+*/
+
 import type { JSXElement } from "solid-js";
 import Header from "./Header.tsx";
 import Footer from "./Footer.tsx";

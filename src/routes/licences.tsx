@@ -1,3 +1,9 @@
+/*
+Copyright 2024 sby1ce
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+*/
+
 import { For, type JSX } from "solid-js";
 import Base from "~/components/Base.tsx";
 // This is ugly but it's the best option there is

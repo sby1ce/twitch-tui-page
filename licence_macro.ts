@@ -1,3 +1,9 @@
+/*
+Copyright 2024 sby1ce
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+*/
+
 import { opendir } from "node:fs/promises";
 import type { Dir } from "node:fs";
 
