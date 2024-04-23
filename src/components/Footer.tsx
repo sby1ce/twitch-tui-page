@@ -24,7 +24,7 @@ export default function Footer(): JSX.Element {
       <div>
         <h3>Website</h3>
         <p>
-          <a href="https://github.com/sby1ce/twitch-chat-tui">
+          <a href="https://github.com/sby1ce/twitch-tui-page">
             Source on GitHub
           </a>
         </p>
@@ -40,7 +40,7 @@ export default function Footer(): JSX.Element {
           </a>
         </p>
         <p>
-          <a href="https://github.com/sby1ce/twitch-chat-tui/issues">
+          <a href="https://github.com/sby1ce/twitch-tui-page/issues">
             Report a website issue
           </a>
         </p>
