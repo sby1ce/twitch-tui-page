@@ -1,72 +1,132 @@
-import { type JSX } from "solid-js";
+import { For, type JSX } from "solid-js";
 import Base from "~/components/Base.tsx";
 // This is ugly but it's the best option there is
 // Wrote a macro to fill these automatically
 // macro start
-import chronoLicense from "~/../static/LICENCES/chrono/LICENSE.txt?raw";
-import coloreyreApache from "~/../static/LICENCES/color-eyre/LICENSE-APACHE.txt?raw";
-import coloreyreMit from "~/../static/LICENCES/color-eyre/LICENSE-MIT.txt?raw";
-import criterionApache from "~/../static/LICENCES/criterion/LICENSE-APACHE.txt?raw";
-import criterionMit from "~/../static/LICENCES/criterion/LICENSE-MIT.txt?raw";
-import crosstermLicense from "~/../static/LICENCES/crossterm/LICENSE.txt?raw";
-import futuresApache from "~/../static/LICENCES/futures/LICENSE-APACHE.txt?raw";
-import futuresMit from "~/../static/LICENCES/futures/LICENSE-MIT.txt?raw";
-import indexmapApache from "~/../static/LICENCES/indexmap/LICENSE-APACHE.txt?raw";
-import indexmapMit from "~/../static/LICENCES/indexmap/LICENSE-MIT.txt?raw";
-import lazyregexLicense from "~/../static/LICENCES/lazy-regex/LICENSE.txt?raw";
-import mimallocLicense from "~/../static/LICENCES/mimalloc/LICENSE.txt?raw";
-import ratatuiLicense from "~/../static/LICENCES/ratatui/LICENSE.txt?raw";
-import tokioLicense from "~/../static/LICENCES/tokio/LICENSE.txt?raw";
-import twitchchattui1 from "~/../static/LICENCES/twitch-chat-tui/CC0-1.0.txt?raw";
-import twitchchattuiLicence from "~/../static/LICENCES/twitch-chat-tui/LICENCE.txt?raw";
-import twitchircLicense from "~/../static/LICENCES/twitch-irc/LICENSE.txt?raw";
+import qqyx from "~/../static/LICENCES/tui/chrono/LICENSE.txt?raw";
+import edin from "~/../static/LICENCES/tui/color-eyre/LICENSE-APACHE.txt?raw";
+import bwza from "~/../static/LICENCES/tui/color-eyre/LICENSE-MIT.txt?raw";
+import gbqt from "~/../static/LICENCES/tui/criterion/LICENSE-APACHE.txt?raw";
+import hkal from "~/../static/LICENCES/tui/criterion/LICENSE-MIT.txt?raw";
+import vkmf from "~/../static/LICENCES/tui/crossterm/LICENSE.txt?raw";
+import fnwd from "~/../static/LICENCES/tui/futures/LICENSE-APACHE.txt?raw";
+import rcds from "~/../static/LICENCES/tui/futures/LICENSE-MIT.txt?raw";
+import vyhj from "~/../static/LICENCES/tui/indexmap/LICENSE-APACHE.txt?raw";
+import ypyw from "~/../static/LICENCES/tui/indexmap/LICENSE-MIT.txt?raw";
+import mhtz from "~/../static/LICENCES/tui/lazy-regex/LICENSE.txt?raw";
+import hjla from "~/../static/LICENCES/tui/mimalloc/LICENSE.txt?raw";
+import ypaz from "~/../static/LICENCES/tui/ratatui/LICENSE.txt?raw";
+import izdy from "~/../static/LICENCES/tui/tokio/LICENSE.txt?raw";
+import sqns from "~/../static/LICENCES/tui/twitch-chat-tui/CC0-1.0.txt?raw";
+import vsls from "~/../static/LICENCES/tui/twitch-chat-tui/LICENCE.txt?raw";
+import xzja from "~/../static/LICENCES/tui/twitch-irc/LICENSE.txt?raw";
+import ibdx from "~/../static/LICENCES/web/eslint-plugin-solid/LICENSE.txt?raw";
+import vhlb from "~/../static/LICENCES/web/prettier/LICENSE.txt?raw";
+import rvim from "~/../static/LICENCES/web/solid-js/LICENSE.txt?raw";
+import lzis from "~/../static/LICENCES/web/twitch-tui-page/CC0-1.0.txt?raw";
+import oief from "~/../static/LICENCES/web/twitch-tui-page/LICENCE.txt?raw";
+import wlmj from "~/../static/LICENCES/web/vinxi/LICENSE.txt?raw";
 
-const appLicences: LicenceProps[] = [
-  { title: "chrono", contents: [chronoLicense] },
-  { title: "coloreyre", contents: [coloreyreApache, coloreyreMit] },
-  { title: "criterion", contents: [criterionApache, criterionMit] },
-  { title: "crossterm", contents: [crosstermLicense] },
-  { title: "futures", contents: [futuresApache, futuresMit] },
-  { title: "indexmap", contents: [indexmapApache, indexmapMit] },
-  { title: "lazyregex", contents: [lazyregexLicense] },
-  { title: "mimalloc", contents: [mimallocLicense] },
-  { title: "ratatui", contents: [ratatuiLicense] },
-  { title: "tokio", contents: [tokioLicense] },
-  { title: "twitchchattui", contents: [twitchchattui1, twitchchattuiLicence] },
-  { title: "twitchirc", contents: [twitchircLicense] },
+const TUI_LICENCES: LicenceProps[] = [
+  { title: "chrono", contents: [{ name: "LICENSE.txt", content: qqyx }] },
+  {
+    title: "color-eyre",
+    contents: [
+      { name: "LICENSE-APACHE.txt", content: edin },
+      { name: "LICENSE-MIT.txt", content: bwza },
+    ],
+  },
+  {
+    title: "criterion",
+    contents: [
+      { name: "LICENSE-APACHE.txt", content: gbqt },
+      { name: "LICENSE-MIT.txt", content: hkal },
+    ],
+  },
+  { title: "crossterm", contents: [{ name: "LICENSE.txt", content: vkmf }] },
+  {
+    title: "futures",
+    contents: [
+      { name: "LICENSE-APACHE.txt", content: fnwd },
+      { name: "LICENSE-MIT.txt", content: rcds },
+    ],
+  },
+  {
+    title: "indexmap",
+    contents: [
+      { name: "LICENSE-APACHE.txt", content: vyhj },
+      { name: "LICENSE-MIT.txt", content: ypyw },
+    ],
+  },
+  { title: "lazy-regex", contents: [{ name: "LICENSE.txt", content: mhtz }] },
+  { title: "mimalloc", contents: [{ name: "LICENSE.txt", content: hjla }] },
+  { title: "ratatui", contents: [{ name: "LICENSE.txt", content: ypaz }] },
+  { title: "tokio", contents: [{ name: "LICENSE.txt", content: izdy }] },
+  {
+    title: "twitch-chat-tui",
+    contents: [
+      { name: "CC0-1.0.txt", content: sqns },
+      { name: "LICENCE.txt", content: vsls },
+    ],
+  },
+  { title: "twitch-irc", contents: [{ name: "LICENSE.txt", content: xzja }] },
+];
+const WEB_LICENCES: LicenceProps[] = [
+  {
+    title: "eslint-plugin-solid",
+    contents: [{ name: "LICENSE.txt", content: ibdx }],
+  },
+  { title: "prettier", contents: [{ name: "LICENSE.txt", content: vhlb }] },
+  { title: "solid-js", contents: [{ name: "LICENSE.txt", content: rvim }] },
+  {
+    title: "twitch-tui-page",
+    contents: [
+      { name: "CC0-1.0.txt", content: lzis },
+      { name: "LICENCE.txt", content: oief },
+    ],
+  },
+  { title: "vinxi", contents: [{ name: "LICENSE.txt", content: wlmj }] },
 ];
 // macro end
 
+interface LicenceContents {
+  name: string;
+  content: string;
+}
+
 interface LicenceProps {
   title: string;
-  contents: string[];
+  contents: LicenceContents[];
 }
 
 function Licence(props: LicenceProps): JSX.Element {
   return (
     <details>
       <summary>{props.title}</summary>
-      <pre>{props.contents[0]}</pre>
-      {/* TODO: <For> here */}
+      <For each={props.contents}>
+        {(item: LicenceContents) => (
+          <details>
+            <summary>{item.name}</summary>
+            <pre>{item.content}</pre>
+          </details>
+        )}
+      </For>
     </details>
   );
 }
 
 export default function Licences(): JSX.Element {
-  const app = (
+  const tui = (
     <section>
       <h2>TUI app</h2>
-      <Licence
-        title={appLicences[0].title}
-        contents={appLicences[0].contents}
-      />
-      {/* TODO: <For> here */}
+      <For each={TUI_LICENCES}>{(item) => <Licence {...item} />}</For>
     </section>
   );
 
   const web = (
     <section>
       <h2>Website</h2>
+      <For each={WEB_LICENCES}>{(item) => <Licence {...item} />}</For>
     </section>
   );
 
@@ -74,7 +134,7 @@ export default function Licences(): JSX.Element {
     <Base current="Licences" title="Licences">
       <main>
         <h1>Licences</h1>
-        {app}
+        {tui}
         {web}
       </main>
     </Base>

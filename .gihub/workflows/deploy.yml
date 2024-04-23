@@ -21,7 +21,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: "/twitch-chat-tui"
+          BASE_PATH: "/twitch-tui-page"
         run: |
           bun run build
           touch .output/build/.nojekyll
