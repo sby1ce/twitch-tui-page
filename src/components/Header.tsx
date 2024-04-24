@@ -8,5 +8,7 @@ import { type JSX } from "solid-js";
 import styles from "./Header.module.css";
 
 export default function Header(): JSX.Element {
-  return <header class={styles.header}><a href="/">Twitch Chat TUI</a></header>;
+  return <header class={styles.header}>
+    <a href="/"><img src="/logo.svg" alt="Twitch Chat TUI" height="32" /></a>
+  </header>;
 }
