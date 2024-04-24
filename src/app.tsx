@@ -49,7 +49,11 @@ function Metadata({ title }: { title: string }): JSX.Element {
       />
       <Meta
         property="og:url"
-        content="https://github.com/sby1ce/twitch-tui-page"
+        content="https://sby1ce.github.io/twitch-tui-page"
+      />
+      <Meta
+        property="og:image"
+        content="https://sby1ce.github.io/twitch-tui-page/picture.png"
       />
     </>
   );
