@@ -1,8 +1,0 @@
-<svg width="400" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="50" height="50" stroke="black" fill="black" stroke-width="5" />
-  <rect x="10" y="10" width="40" height="30" stroke="white" fill="transparent" stroke-width="2" />
-  <path d="M20 20 h 25" stroke="white" />
-  <path d="M20 25 h 25" stroke="white" />
-  <path d="M20 30 h 25" stroke="white" />
-  <text x="60" y="37" font-size="40" fill="black" font-family="Verdana, Helvetica, Arial, sans-serif">Twitch Chat TUI</text>
-</svg>
