@@ -55,6 +55,7 @@ function Metadata({ title }: { title: string }): JSX.Element {
         property="og:image"
         content="https://sby1ce.github.io/twitch-tui-page/picture.png"
       />
+      <Meta property="og:updated_time" content="2024-04-19" />
     </>
   );
 }
