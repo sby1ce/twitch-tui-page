@@ -7,4 +7,18 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 .header {
   box-sizing: border-box;
   block-size: 2em;
+  display: grid;
+  grid-template-columns: 16em 1fr;
+}
+
+.header > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+.header > div > * {
+  block-size: 100%;
+  margin: 0 0.5em 0 0.5em;
 }

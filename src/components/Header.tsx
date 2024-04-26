@@ -4,13 +4,18 @@ Copyright 2024 sby1ce
 SPDX-License-Identifier: AGPL-3.0-or-later
 */
 
-import { type JSX } from "solid-js";
+import { Setter, Signal, createEffect, createSignal, type JSX } from "solid-js";
 import styles from "./Header.module.css";
+import { isServer } from "solid-js/web";
 
 function Logo({ height }: { height: string }): JSX.Element {
   const css = `\
   svg {
     height: ${height};
+  }
+  
+  text {
+    fill: var(--palette-text);
   }
   `;
   return (
@@ -57,12 +62,64 @@ function Logo({ height }: { height: string }): JSX.Element {
   );
 }
 
+enum Theme {
+  Dark = "dark",
+  Light = "light",
+}
+
+const THEMES = ["dark", "light"];
+
+function createTheme(): Signal<Theme> {
+  const [getter, setter] = createSignal(Theme.Dark);
+
+  if (!isServer) {
+    const stored: string | null = localStorage.getItem("theme");
+    if (stored) {
+      setter(stored as Theme);
+    }
+  }
+
+  const store: Setter<Theme> = (arg: Theme | ((arg: Theme) => Theme)): void => {
+    setter(arg);
+    if (typeof arg === "function") {
+      localStorage?.setItem("theme", arg(getter()));
+    } else {
+      localStorage?.setItem("theme", arg);
+    }
+  };
+
+  return [getter, store];
+}
+
 export default function Header(): JSX.Element {
+  const [theme, setTheme] = createTheme();
+
+  createEffect((): void => {
+    const body = document.querySelector("body");
+    if (!body) {
+      return;
+    }
+    body.classList.remove(...THEMES);
+    body.classList.add(theme());
+  });
+
   return (
     <header class={styles.header}>
       <a href="/">
         <Logo height="2em" />
       </a>
+      <div>
+        <button type="button" onClick={() => localStorage.clear()}>
+          Clear localStorage
+        </button>
+        <select onInput={(e) => setTheme(e.currentTarget.value as Theme)}>
+          <option disabled selected hidden value="">
+            Theme
+          </option>
+          <option value={Theme.Dark}>Dark</option>
+          <option value={Theme.Light}>Light</option>
+        </select>
+      </div>
     </header>
   );
 }

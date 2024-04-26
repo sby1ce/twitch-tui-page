@@ -49,6 +49,15 @@ export default function Download(): JSXElement {
           </Match>
         </Switch>
 
+        <select onInput={(e) => setPlatform(e.currentTarget.value as Platform)}>
+          <option value={Platform.Windows} selected>
+            Windows
+          </option>
+          <option value={Platform.Linux}>Linux</option>
+        </select>
+      </div>
+
+      <div class={style.buttons}>
         <button type="button">
           <a href={github}>Download from GitHub</a>
         </button>
@@ -56,13 +65,6 @@ export default function Download(): JSXElement {
           <a href={codeberg}>Build from source on Codeberg</a>
         </button>
       </div>
-
-      <select onInput={(e) => setPlatform(e.currentTarget.value as Platform)}>
-        <option value={Platform.Windows} selected>
-          Windows
-        </option>
-        <option value={Platform.Linux}>Linux</option>
-      </select>
     </section>
   );
 }

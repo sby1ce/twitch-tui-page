@@ -17,5 +17,16 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 .buttons {
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 1em;
+}
+
+.buttons button {
+  border-radius: 1em;
+  block-size: 4em;
+}
+
+.download select {
+  border-radius: 2em;
+  text-align: center;
 }

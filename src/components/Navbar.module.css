@@ -3,3 +3,24 @@ Copyright 2024 sby1ce
 
 SPDX-License-Identifier: AGPL-3.0-or-later
 */
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.nav li span,
+.nav li a {
+  display: flex;
+  block-size: 2em;
+  justify-content: left;
+  align-items: center;
+  padding-left: 2em;
+  background-color: color(from var(--palette-theme) a98-rgb r g b / 80%);
+  color: var(--palette-text);
+}
+
+.nav li a:hover {
+  background-color: var(--palette-theme);
+}

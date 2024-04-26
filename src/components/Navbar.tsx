@@ -4,8 +4,8 @@ Copyright 2024 sby1ce
 SPDX-License-Identifier: AGPL-3.0-or-later
 */
 
-import { A } from "@solidjs/router";
-import { For, type JSX } from "solid-js";
+import { For, Show, type JSX } from "solid-js";
+import style from "./Navbar.module.css";
 
 export interface NavbarProps {
   current: string;
@@ -22,16 +22,11 @@ const routes: Route[] = [
 ];
 
 function renderRoute(current: string, item: Route): JSX.Element {
-  if (item.name === current) {
-    return (
-      <li>
-        <span>{item.name}</span>
-      </li>
-    );
-  }
   return (
     <li>
-      <A href={item.path}>{item.name}</A>
+      <Show when={item.name !== current} fallback={<span>{item.name}</span>}>
+        <a href={item.path}>{item.name}</a>
+      </Show>
     </li>
   );
 }
@@ -39,7 +34,7 @@ function renderRoute(current: string, item: Route): JSX.Element {
 export default function Navbar(props: NavbarProps): JSX.Element {
   return (
     <nav>
-      <ul>
+      <ul class={style.nav}>
         <For each={routes}>{renderRoute.bind(null, props.current)}</For>
       </ul>
     </nav>
