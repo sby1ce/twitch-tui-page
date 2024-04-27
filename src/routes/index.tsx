@@ -14,7 +14,7 @@ export default function Home() {
         <section class="intro">
           <h1>Twitch Chat TUI</h1>
           <p>
-            A chat text-based user interface is a chat client for&nbsp;
+            A text-based chat interface for&nbsp;
             <a href="https://www.twitch.tv/" target="_blank">
               Twitch
             </a>

@@ -142,6 +142,7 @@ export default function Licences(): JSX.Element {
     <Frame current="Licences" title="Licences">
       <main>
         <h1>Licences</h1>
+        <p>See full text of copyright notices from crates and packages</p>
         {tui}
         {web}
       </main>
