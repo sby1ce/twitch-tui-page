@@ -13,11 +13,10 @@ interface DownloadProps {
 }
 
 function DownloadButton(props: DownloadProps): JSXElement {
-  const filename: string = "twitch_chat_tui" + props.extension;
-  const link: string = "/" + filename;
+  const name = "twitch_chat_tui";
   return (
     <button type="button">
-      <a href={link} download={filename}>
+      <a href={"/" + name + props.extension} download={name + props.extension}>
         Download for {props.platform}
       </a>
     </button>
@@ -31,6 +30,7 @@ enum Platform {
 
 export default function Download(): JSXElement {
   // Don't forget to actually put the downloadable files in the /public folder
+  // TODO: this
   const github: string = "";
   const codeberg: string =
     "https://codeberg.org/hedonic_treadmill/twitch-chat-tui";

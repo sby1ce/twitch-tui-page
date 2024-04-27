@@ -8,16 +8,18 @@ import { Setter, Signal, createEffect, createSignal, type JSX } from "solid-js";
 import styles from "./Header.module.css";
 import { isServer } from "solid-js/web";
 
-function Logo({ height }: { height: string }): JSX.Element {
-  const css = `\
-  svg {
-    height: ${height};
-  }
+function Logo(props: { height: string }): JSX.Element {
+  const css = (
+    <style>{`\
+      svg {
+        height: ${props.height};
+      }
   
-  text {
-    fill: var(--palette-text);
-  }
-  `;
+      text {
+        fill: var(--palette-text);
+      } \
+  `}</style>
+  );
   return (
     <svg
       role="img"
@@ -57,7 +59,7 @@ function Logo({ height }: { height: string }): JSX.Element {
       >
         Twitch Chat TUI
       </text>
-      <style>{css}</style>
+      {css}
     </svg>
   );
 }

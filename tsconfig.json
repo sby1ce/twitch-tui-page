@@ -20,5 +20,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true
-  }
+  },
+  "include": ["src/**/*", "tests/**/*", "app.config.ts", "licence_macro.ts"],
+  "exclude": [".?*/**/*"]
 }

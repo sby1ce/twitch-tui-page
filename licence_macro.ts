@@ -29,7 +29,7 @@ function makeId(length: number): string {
   return new Array(length)
     .fill(null)
     .reduce(
-      (acc, _item) =>
+      (acc: string): string =>
         acc + characters.charAt(Math.floor(Math.random() * charactersLength)),
       "",
     );

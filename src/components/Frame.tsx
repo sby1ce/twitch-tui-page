@@ -17,12 +17,14 @@ export interface FrameProps {
 }
 
 export default function Frame(props: FrameProps): JSXElement {
-  const title: string = props.title
-    ? `${props.title} | Twitch Chat TUI`
-    : "Twitch Chat TUI";
+  const title = (
+    <Title>
+      {props.title ? `${props.title} | Twitch Chat TUI` : "Twitch Chat TUI"}
+    </Title>
+  );
   return (
     <>
-      <Title>{title}</Title>
+      {title}
       <Header />
       <hr />
       <div class="wrapper">

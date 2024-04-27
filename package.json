@@ -6,20 +6,27 @@
     "dev": "vinxi dev",
     "build": "vinxi build",
     "preview": "cd preview-server && cargo run --release",
-    "format": "prettier -w . --plugin=eslint-plugin-solid",
+    "lint": "eslint .",
+    "format": "prettier -w .",
     "licences": "bun licence_macro.ts && prettier -w src/routes/licences.tsx"
   },
   "engines": {
     "node": ">=20"
   },
   "devDependencies": {
+    "@eslint/js": "^9.1.1",
     "@solidjs/meta": "^0.29.3",
     "@solidjs/router": "^0.13.1",
     "@solidjs/start": "^1.0.0-rc.0",
     "@types/bun": "^1.1.0",
-    "eslint-plugin-solid": "^0.13.2",
+    "@typescript-eslint/parser": "^7.7.1",
+    "eslint": "^9.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-solid": "^0.14.0",
     "prettier": "^3.2.5",
     "solid-js": "^1.8.16",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.7.1",
     "vinxi": "^0.3.11"
   }
 }

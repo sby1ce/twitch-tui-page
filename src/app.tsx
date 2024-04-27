@@ -38,10 +38,10 @@ function Favicons(): JSX.Element {
   );
 }
 
-function Metadata({ title }: { title: string }): JSX.Element {
+function Metadata(props: { title: string }): JSX.Element {
   return (
     <>
-      <Meta property="og:title" content={title} />
+      <Meta property="og:title" content={props.title} />
       <Meta property="og:type" content="website" />
       <Meta
         property="og:description"
