@@ -130,8 +130,8 @@ section {
 
 section > details {
   margin: 0.5em;
-  border: 1px solid var(--palette-text-secondary);
-  border-radius: 5px;
+  border: solid var(--palette-text-secondary);
+  border-width: 0 1px 0 1px;
 }
 
 section > details > summary {
