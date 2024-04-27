@@ -50,10 +50,10 @@ function Logo({ height }: { height: string }): JSX.Element {
       <path d="M20 30 h 25" stroke="white" />
       <text
         x="60"
-        y="37"
-        font-size="40"
+        y="34"
+        font-size="35"
         fill="black"
-        font-family="Verdana, Helvetica, Arial, sans-serif"
+        font-family="'Courier New'"
       >
         Twitch Chat TUI
       </text>

@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <Frame current="Home" title="">
       <main>
-        <section>
+        <section class="intro">
           <h1>Twitch Chat TUI</h1>
           <p>
             A chat text-based user interface is a chat client for&nbsp;
