@@ -25,9 +25,12 @@ See [LICENCE.txt](https://github.com/sby1ce/twitch-tui-page/blob/main/LICENCE.tx
 
 This project is using the following third-party packages
 
+- [`eslint`](https://eslint.org/) - licensed under `MIT`
+- [`eslint-config-prettier`](https://www.npmjs.com/package/eslint-config-prettier) - licensed under `MIT`
 - [`eslint-plugin-solid`](https://www.npmjs.com/package/eslint-plugin-solid) - licensed under `MIT`
-- [`prettier`](https://www.npmjs.com/package/prettier) - licensed under `MIT`
+- [`prettier`](https://prettier.io/) - licensed under `MIT`
 - [`solid-js`](https://www.solidjs.com/) - licensed under `MIT`
+- [`typescript-eslint`](https://typescript-eslint.io/) - licensed under `BSD-2-Clause`
 - [`vinxi`](https://vinxi.vercel.app/) - licensed under `MIT`
 
 Copies of the licences for each crate are provided
