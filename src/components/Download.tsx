@@ -30,8 +30,8 @@ enum Platform {
 
 export default function Download(): JSXElement {
   // Don't forget to actually put the downloadable files in the /public folder
-  // TODO: this
-  const github: string = "";
+  const github: string =
+    "https://github.com/sby1ce/twitch-tui-page/releases/latest";
   const codeberg: string =
     "https://codeberg.org/hedonic_treadmill/twitch-chat-tui";
 
