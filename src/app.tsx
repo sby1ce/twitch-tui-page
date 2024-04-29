@@ -30,7 +30,8 @@ function Favicons(): JSX.Element {
         sizes="16x16"
         href="/favicon-16x16.png"
       />
-      <Link rel="manifest" href="/site.webmanifest" />
+      {/* Idk why webmanifest specifically doesn't get base url prefixed */}
+      <Link rel="manifest" href="$public/site.webmanifest" />
       <Link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <Meta name="msapplication-TileColor" content="#da532c" />
       <Meta name="theme-color" content="#ffffff" />

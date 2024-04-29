@@ -4,7 +4,7 @@
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "dev": "vinxi dev",
-    "build": "vinxi build",
+    "build": "vinxi build --release",
     "preview": "cd preview-server && cargo run --release",
     "lint": "eslint .",
     "format": "prettier -w .",

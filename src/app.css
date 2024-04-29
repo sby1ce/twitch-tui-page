@@ -58,7 +58,7 @@ main {
 }
 
 .intro {
-  background: var(--palette-background) url("/background.png");
+  background: var(--palette-background) url("$public/background.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
