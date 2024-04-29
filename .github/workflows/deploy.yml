@@ -37,7 +37,7 @@ jobs:
           touch .output/public/.nojekyll
 
       - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ".output/public/"
 
@@ -56,4 +56,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
