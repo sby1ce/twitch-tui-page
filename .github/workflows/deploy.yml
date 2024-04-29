@@ -8,8 +8,8 @@ on:
   push:
     branches: "main"
     paths:
-      - '.github/workflows/deploy.yml'
-      - 'src/**'
+      - ".github/workflows/deploy.yml"
+      - "src/**"
 
 jobs:
   build_site:
