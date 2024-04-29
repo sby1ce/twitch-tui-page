@@ -38,3 +38,4 @@ target/
 # Lock files
 Cargo.lock
 bun.lockb
+yarn.lock

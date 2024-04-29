@@ -7,6 +7,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 import { Setter, Signal, createEffect, createSignal, type JSX } from "solid-js";
 import styles from "./Header.module.css";
 import { isServer } from "solid-js/web";
+import { A } from "@solidjs/router";
 
 function Logo(props: { height: string }): JSX.Element {
   const css = (
@@ -107,9 +108,9 @@ export default function Header(): JSX.Element {
 
   return (
     <header class={styles.header}>
-      <a href="/">
+      <A href="/">
         <Logo height="2em" />
-      </a>
+      </A>
       <div>
         <button type="button" onClick={() => localStorage.clear()}>
           Clear localStorage

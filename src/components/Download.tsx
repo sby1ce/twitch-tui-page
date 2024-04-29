@@ -6,6 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 import { Match, Switch, createSignal, type JSXElement } from "solid-js";
 import style from "./Download.module.css";
+import { A } from "@solidjs/router";
 
 interface DownloadProps {
   platform: string;
@@ -16,9 +17,9 @@ function DownloadButton(props: DownloadProps): JSXElement {
   const name = "twitch_chat_tui";
   return (
     <button type="button">
-      <a href={"/" + name + props.extension} download={name + props.extension}>
+      <A href={"/" + name + props.extension} download={name + props.extension}>
         Download for {props.platform}
-      </a>
+      </A>
     </button>
   );
 }

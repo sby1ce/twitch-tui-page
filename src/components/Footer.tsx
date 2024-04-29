@@ -6,6 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 import { type JSX } from "solid-js";
 import styles from "./Footer.module.css";
+import { A } from "@solidjs/router";
 
 export default function Footer(): JSX.Element {
   return (
@@ -18,7 +19,7 @@ export default function Footer(): JSX.Element {
           </a>
         </p>
         <p>
-          <a href="/licences#TUI">Licences</a>
+          <A href="/licences#TUI">Licences</A>
         </p>
       </div>
       <div>
@@ -29,7 +30,7 @@ export default function Footer(): JSX.Element {
           </a>
         </p>
         <p>
-          <a href="/licences#Website">Licences</a>
+          <A href="/licences#Website">Licences</A>
         </p>
       </div>
       <div>

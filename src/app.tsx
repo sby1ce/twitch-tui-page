@@ -64,6 +64,8 @@ export default function App(): JSX.Element {
   const title: string = "Twitch Chat TUI";
   return (
     <Router
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      base={import.meta.env.SERVER_BASE_URL}
       root={(props) => (
         <MetaProvider>
           <Title>{title}</Title>

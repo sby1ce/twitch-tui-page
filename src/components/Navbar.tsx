@@ -6,6 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 import { For, Show, type JSX } from "solid-js";
 import style from "./Navbar.module.css";
+import { A } from "@solidjs/router";
 
 export interface NavbarProps {
   current: string;
@@ -25,7 +26,7 @@ function renderRoute(current: string, item: Route): JSX.Element {
   return (
     <li>
       <Show when={item.name !== current} fallback={<span>{item.name}</span>}>
-        <a href={item.path}>{item.name}</a>
+        <A href={item.path}>{item.name}</A>
       </Show>
     </li>
   );

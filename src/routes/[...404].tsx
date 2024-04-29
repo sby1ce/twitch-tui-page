@@ -5,6 +5,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 */
 
 import { Title } from "@solidjs/meta";
+import { A } from "@solidjs/router";
 import { HttpStatusCode } from "@solidjs/start";
 import type { JSX } from "solid-js";
 
@@ -16,7 +17,7 @@ export default function NotFound(): JSX.Element {
       <h1>Page Not Found</h1>
       <p>
         Go back to the main&nbsp;
-        <a href="/">page</a>
+        <A href="/">page</A>
       </p>
     </main>
   );
