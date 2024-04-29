@@ -3,4 +3,5 @@
 # SPDX-License-Identifier: CC0-1.0
 
 favicon*
-web/  # Copy the folder from root 
+# Copy the folder from root 
+web/  
