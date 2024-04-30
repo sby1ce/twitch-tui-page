@@ -4,7 +4,7 @@ Copyright 2024 sby1ce
 SPDX-License-Identifier: AGPL-3.0-or-later
 */
 
-use color_eyre::eyre::{self, OptionExt};
+use color_eyre::eyre;
 use std::{
     io::{BufRead, BufReader},
     net::{TcpListener, TcpStream},
@@ -14,10 +14,9 @@ use preview_server::{find_file, HttpResponse};
 
 fn handle_connection(mut stream: TcpStream) -> eyre::Result<()> {
     let buf_reader = BufReader::new(&mut stream);
-    let request_line = buf_reader
-        .lines()
-        .next()
-        .ok_or_eyre("buf_reader stopped unexpectedly")??;
+    let Some(request_line) = buf_reader.lines().next().transpose()? else {
+        return Ok(());
+    };
 
     println!("{request_line}");
 
