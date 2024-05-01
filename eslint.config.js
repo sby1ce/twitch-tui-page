@@ -11,6 +11,7 @@ import tseslint from "typescript-eslint";
 import * as tsParser from "@typescript-eslint/parser";
 import solid from "eslint-plugin-solid/configs/recommended.js";
 import prettier from "eslint-config-prettier";
+import cypress from "eslint-plugin-cypress";
 
 export default tseslint.config(
   js.configs.recommended,
@@ -31,6 +32,12 @@ export default tseslint.config(
     },
   },
   prettier,
+  {
+    files: ["cypress/*"],
+    plugins: {
+      cypress,
+    },
+  },
   {
     ignores: [
       ".git/*",

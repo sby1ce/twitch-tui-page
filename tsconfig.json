@@ -21,6 +21,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
-  "include": ["src/**/*", "tests/**/*", "app.config.ts", "licence_macro.ts"],
+  "include": [
+    "src/**/*",
+    "tests/**/*",
+    "cypress/**/*",
+    "app.config.ts",
+    "licence_macro.ts",
+    "cypress.config.ts"
+  ],
   "exclude": [".?*/**/*"]
 }
