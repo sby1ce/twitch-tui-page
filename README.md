@@ -6,7 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Twitch Chat TUI
 
-A website for [Twitch](https://www.twitch.tv) chat text-based user interface. \
+A [website](https://sby1ce.github.io/twitch-tui-page) for [Twitch](https://www.twitch.tv) chat text-based user interface. \
 Source code for the application can be found on [Codeberg](https://codeberg.org/hedonic_treadmill/twitch-chat-tui)
 
 # Navigation
