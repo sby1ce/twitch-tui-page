@@ -15,20 +15,20 @@
     "node": ">=20"
   },
   "devDependencies": {
-    "@eslint/js": "^9.1.1",
-    "@solidjs/meta": "^0.29.3",
-    "@solidjs/router": "^0.13.1",
-    "@solidjs/start": "^1.0.0-rc.0",
-    "@types/bun": "^1.1.0",
-    "@typescript-eslint/parser": "^7.7.1",
-    "cypress": "^13.8.1",
-    "eslint": "^9.1.1",
+    "@eslint/js": "^9.7.0",
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.13.6",
+    "@solidjs/start": "^1.0.6",
+    "@types/bun": "^1.1.6",
+    "@typescript-eslint/parser": "^7.16.1",
+    "cypress": "^13.13.1",
+    "eslint": "^9.7.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-cypress": "^3.0.3",
-    "eslint-plugin-solid": "^0.14.0",
-    "prettier": "^3.2.5",
-    "solid-js": "^1.8.16",
-    "typescript-eslint": "^7.7.1",
-    "vinxi": "^0.3.11"
+    "eslint-plugin-cypress": "^3.3.0",
+    "eslint-plugin-solid": "^0.14.1",
+    "prettier": "^3.3.3",
+    "solid-js": "^1.8.18",
+    "typescript-eslint": "^7.16.1",
+    "vinxi": "^0.3.14"
   }
 }
