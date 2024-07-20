@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build --release",
-    "preview": "cd preview-server && cargo run --release",
     "lint": "eslint .",
     "format": "prettier -w .",
     "licences": "bun licence_macro.ts && prettier -w src/routes/licences.tsx",
