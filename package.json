@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build --release",
+    "preview": "echo http://localhost:7878 && ./static-web-server -p 7878 -d .output/public",
     "lint": "eslint .",
     "format": "prettier -w .",
     "licences": "bun licence_macro.ts && prettier -w src/routes/licences.tsx",
